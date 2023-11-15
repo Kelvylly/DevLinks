@@ -1,0 +1,123 @@
+
+body{
+    background: black var(--bg-url) no-repeat top center/cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    height: 100vh;
+   
+}
+main{
+   min-height: 600px;
+  min-width: 360px;
+}
+main #perfil{
+  max-width: 120px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  border: 2px solid white;
+  border-radius:100% ;
+}
+
+#kl{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+#switch{
+  width: 90px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ position: relative;
+ margin: auto;
+ padding: 20px;
+}
+#switch button{
+  background:white var(--bg-tema) no-repeat center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  z-index: 0;
+  top: var(--switch-top-);
+  left: var(--switch-left);
+  position: absolute;
+  animation: temamoon 0.5s forwards;
+}
+.light #switch button{
+  animation: temasun 0.5s forwards;
+}
+#switch span{
+  width: 64px;
+  height: 24px;
+  border: 1px solid var(--bg-troc-tem-bord);
+  border-radius:  9999px ; 
+  background: var(--bg-troc-tem);
+  backdrop-filter: blur(4);
+  -webkit-backdrop-filter: blur(4);
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+nav a:hover{
+  background-color: var(--bg-tot);
+  border-radius: 10px;
+}
+#conteudo{
+  display: flex;
+  margin: auto 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 24px;
+}
+.conteudo{
+  background:var(--bg-cont-);
+  border: var(--bord-cor);
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 560px;
+  margin-bottom: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter:blur(4px) ;
+  font-weight: 500;
+  
+}
+#redessocial {
+  padding:24px 0;
+  display:flex;
+  justify-content: center;
+  font-size: 24px;
+  
+}
+.redessocial {
+  padding:16px ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+.redessocial:hover{
+  background-color: var(--bg-tot);
+  border-radius: 50%;
+}
+footer{
+  padding: 24px 0;
+  font-size: 18px;
+    text-align: center;
+}
+footer a:hover{
+  border-bottom: 1px solid black;
+  
+}

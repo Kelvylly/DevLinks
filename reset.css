@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --text-color:white;
+    --bg-url:url(image/bg-mobile.jpg);
+    --bord-cor:1px solid white;
+    --bg-tot:rgba(240, 248, 255, 0.05);
+    --bg-tema:url(image/moon-starss.svg);
+    --bg-troc-tem:rgba(255, 255, 255, 0.1);
+    --bg-troc-tem-bord:rgb(255, 255, 255);
+    --switch-top-: 25%;
+    --switch-left: 10%;
+    --bg-cont-:rgba(255, 255, 255, 0.07);
+    --tem-anim-inic:50%;
+    --tem-anim-fim:10%;
+  }
+  .light{
+    --text-color:rgb(0, 0, 0);
+    --bg-url:url(image/bg-mobile-light.jpg);
+    --bord-cor:1px solid rgb(0, 0, 0);
+    --bg-tot:rgba(0, 0, 0, 0.05);
+    --bg-tema:url(image/sun.svg);
+    --bg-troc-tem:rgba(0, 0, 0, 0.1);
+    --bg-troc-tem-bord:rgb(0, 0, 0);
+    --switch-top-: 25%;
+    --switch-left: 50%;
+    --bg-cont-:rgba(0, 0, 0, 0.07);
+    --tem-anim-inic:10%;
+    --tem-anim-fim:50%;
+  }
+  @media (min-witdh:700px) {
+    :root{
+    --text-color:white;
+    --bg-url:url(image/bg-desktop.jpg);
+  }
+  .light{
+  
+    --bg-url:url(image/bg-desktop-light.jpg);
+  }
+  }
+  @keyframes temasun{
+    from{
+      left: var(--tem-anim-inic);
+    }
+    to{
+      left: var(--tem-anim-fim);
+    }
+  
+  }
+  @keyframes temamoon{
+    from{
+      left: var(--tem-anim-inic);
+    }
+    to{
+      left: var(--tem-anim-fim);
+    }
+  
+  }
